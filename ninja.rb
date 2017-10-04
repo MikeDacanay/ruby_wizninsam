@@ -11,7 +11,14 @@ class Ninja < Human
 		self.health += 10
 		self
 	end 	
+
+	def get_away
+		self.health -= 15
+	end
 end
 
 # mike = Human.new
 kakashi = Ninja.new
+
+# kakashi.get_away
+# puts kakashi.health
